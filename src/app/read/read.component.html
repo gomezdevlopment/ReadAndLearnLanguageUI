@@ -1,0 +1,13 @@
+<div class="read-component-container">
+    <div class="add-text-container">
+      <h1>Create a New Text</h1>
+      <textarea class="title" placeholder="Add title here" [(ngModel)]="myTitle"></textarea>
+      <textarea class="text" placeholder="Paste text here" [(ngModel)]="myTextArea"></textarea>
+      <button class="btn btn-primary" (click)="saveText()">Save Text</button>
+    </div>
+    <div class="user-texts-container">
+      <h1>Your texts</h1>
+      <!-- <app-user-text-list></app-user-text-list> -->
+    </div>
+  </div>
+  

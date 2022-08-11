@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { ReadComponent } from './read/read.component';
+import { FormsModule } from '@angular/forms';
+const routes: Routes = [{path: 'read', component: ReadComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
