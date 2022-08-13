@@ -5,19 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu/nav-menu.component';
 import { ReadComponent } from './read/read.component';
+import { AddTextComponent } from './read/add-text/add-text/add-text.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    ReadComponent
+    ReadComponent,
+    AddTextComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule, 
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

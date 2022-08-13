@@ -7,14 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReadComponent implements OnInit {
 
-  public myTitle = ""
-  public myTextArea = ""
-
-  public saveText() {
-    console.log(this.myTitle)
-    console.log(this.myTextArea)
-  }
-
   ngOnInit(): void {
   }
 
