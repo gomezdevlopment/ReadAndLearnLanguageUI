@@ -1,6 +1,6 @@
 export class UserText {
-  textId: number = 0;
-  title: string = '';
-  text: string = '';
-  userId: number = 0;
+  TextId: number = 0;
+  Title: string = '';
+  Text: string = '';
+  UserId: number = 0;
 }

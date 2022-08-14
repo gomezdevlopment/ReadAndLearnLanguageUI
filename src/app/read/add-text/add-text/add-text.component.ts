@@ -14,9 +14,9 @@ export class AddTextComponent implements OnInit {
   constructor(public service: UserTextService) {}
 
   public saveText() {
-    this.service.userText.title = this.myTitle;
-    this.service.userText.text = this.myTextArea;
-    this.service.userText.userId = 1;
+    this.service.userText.Title = this.myTitle;
+    this.service.userText.Text = this.myTextArea;
+    this.service.userText.UserId = 1;
     console.log(this.service.userText);
 
     this.service.postUserText().subscribe(

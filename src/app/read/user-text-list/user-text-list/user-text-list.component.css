@@ -1,0 +1,9 @@
+.user-text-card {
+  width: 300px;
+  height: 100px;
+  color: blueviolet;
+  background-color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+}

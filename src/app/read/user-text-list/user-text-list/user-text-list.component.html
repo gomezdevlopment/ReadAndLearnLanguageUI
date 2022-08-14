@@ -1,0 +1,12 @@
+<p>user-text-list works!</p>
+<ul>
+  <li *ngFor="let text of userTexts; let i = index">
+    <div
+      class="user-text-card"
+      (click)="selectText(i)"
+      [routerLink]="['/read/text']"
+    >
+      {{ text.Title }}
+    </div>
+  </li>
+</ul>

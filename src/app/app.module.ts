@@ -7,6 +7,8 @@ import { NavMenuComponent } from './nav-menu/nav-menu/nav-menu.component';
 import { ReadComponent } from './read/read.component';
 import { AddTextComponent } from './read/add-text/add-text/add-text.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserTextListComponent } from './read/user-text-list/user-text-list/user-text-list.component';
+import { UserTextComponent } from './read/user-text/user-text.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavMenuComponent,
     ReadComponent,
     AddTextComponent,
+    UserTextListComponent,
+    UserTextComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
