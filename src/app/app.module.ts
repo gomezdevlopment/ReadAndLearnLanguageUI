@@ -9,6 +9,7 @@ import { AddTextComponent } from './read/add-text/add-text/add-text.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserTextListComponent } from './read/user-text-list/user-text-list/user-text-list.component';
 import { UserTextComponent } from './read/user-text/user-text.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,13 @@ import { UserTextComponent } from './read/user-text/user-text.component';
     UserTextListComponent,
     UserTextComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    FontAwesomeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

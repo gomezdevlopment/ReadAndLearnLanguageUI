@@ -18,6 +18,10 @@ export class UserTextService {
     return this.client.post(this.baseUrl, this.userText);
   }
 
+  deleteUserText(textId: number) {
+    return this.client.delete(this.baseUrl + '/' + textId);
+  }
+
   getUserTexts(userId: number): Observable<UserText[]> {
     return this.client.get<UserText[]>(this.baseUrl + '/' + userId);
   }

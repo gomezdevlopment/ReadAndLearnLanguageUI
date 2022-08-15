@@ -1,12 +1,15 @@
 <p>user-text-list works!</p>
 <ul>
   <li *ngFor="let text of userTexts; let i = index">
-    <div
-      class="user-text-card"
-      (click)="selectText(i)"
-      [routerLink]="['/read/text']"
-    >
-      {{ text.Title }}
+    <div class="user-text-card">
+      <div class="title" (click)="selectText(i)" [routerLink]="['/read/text']">
+        {{ text.Title }}
+      </div>
+      <fa-icon
+        class="delete-icon"
+        [icon]="faTrash"
+        (click)="deleteText(i)"
+      ></fa-icon>
     </div>
   </li>
 </ul>
